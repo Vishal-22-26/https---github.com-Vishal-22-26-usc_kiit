@@ -33,66 +33,65 @@ nav ul li a {
   text-decoration: none;
 }
 
-/* Main section styles */
+
 .main {
   display: flex;
   justify-content: space-between;
-  flex-wrap: nowrap; /* Prevent wrapping to keep items aligned horizontally */
-  gap: 10px; /* Gap between article and aside */
+  flex-wrap: nowrap; 
+  gap: 10px; 
 }
 
-/* Base styles for the article */
+
 .articlet {
-  flex: 1 1 65%; /* Adjust width to fit 65% of the container */
+  flex: 1 1 65%; 
   padding: 20px;
   background-color: lightgray;
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  max-width: 100%; /* Ensure the article does not exceed container width */
+  box-sizing: border-box; 
+  max-width: 100%; 
 }
 
-/* Styles for the aside section */
+
 .asidet {
-  flex: 1 1 30%; /* Adjust width to fit 30% of the container */
+  flex: 1 1 30%;
   padding: 20px;
   background-color: aquamarine;
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  max-width: 100%; /* Ensure the aside does not exceed container width */
+  box-sizing: border-box; 
+  max-width: 100%; 
 }
 
-/* Styles for sections inside the article */
+
 .sect {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Gap between sections */
+  gap: 10px; 
 }
 
 section {
-  border: 2px solid black; /* Border for all sections */
+  border: 2px solid black; 
   padding: 10px;
 }
 
-/* Styles for smaller screens */
 @media (max-width: 768px) {
   .articlet {
-    flex: 1 1 50%; /* Adjust to fit 50% of the container width */
+    flex: 1 1 50%;
     padding: 15px;
   }
 
   .asidet {
-    flex: 1 1 50%; /* Adjust to fit 50% of the container width */
+    flex: 1 1 50%; 
     padding: 15px;
   }
 }
 
-/* Styles for extra small screens */
+
 @media (max-width: 480px) {
   .articlet {
-    flex: 1 1 100%; /* Take full width on extra small screens */
+    flex: 1 1 100%; 
     padding: 10px;
   }
 
   .asidet {
-    flex: 1 1 100%; /* Take full width on extra small screens */
+    flex: 1 1 100%; 
     padding: 10px;
   }
 }
